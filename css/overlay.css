@@ -1,0 +1,21 @@
+#overlay {
+  /* Position */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  /* Size */
+  width: 100vw;
+  height: 100vh;
+  /* Colour */
+  background-color: #000000;
+  /* Misc */
+  visibility: hidden;
+  opacity: 0;
+}
+
+#overlay.active {
+  /* Misc */
+  visibility: visible;
+  opacity: 0.5;
+}

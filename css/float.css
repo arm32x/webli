@@ -1,0 +1,11 @@
+/* WebLi Float CSS */
+
+/* Default Styles */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
