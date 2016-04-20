@@ -2,199 +2,199 @@
 
 /* Mobile-Only Styles */
 @media only screen and (max-width: 768px) {
-  #appbar {
-    /* Spacing */
-    padding: 16px;
-    /* Size */
-    width: calc(100vw - (16px * 2));
-  }
-  
-  #appbar br {
-    /* Size */
-    height: 16px;
-  }
-  
-  .screen {
-    /* Size */
-    height: calc(100vh - 56px);
-    /* Spacing */
-    padding-top: 56px;
-  }
-  
-  .card {
-    /* Size */
-    width: calc(100vw - ((16px * 2) + (16px * 2)));
-    /* Spacing */
-    margin: 16px;
-  }
+    #appbar {
+        /* Spacing */
+        padding: 16px;
+        /* Size */
+        width: calc(100vw - (16px * 2));
+    }
+    
+    #appbar br {
+        /* Size */
+        height: 16px;
+    }
+    
+    .screen {
+        /* Size */
+        height: calc(100vh - 56px);
+        /* Spacing */
+        padding-top: 56px;
+    }
+    
+    .card {
+        /* Size */
+        width: calc(100vw - ((16px * 2) + (16px * 2)));
+        /* Spacing */
+        margin: 16px;
+    }
 }
 
 /* Desktop-Only Styles */
 @media only screen and (min-width: 769px) {
-  #appbar {
-    /* Position */
-    z-index: 5;
-    /* Spacing */
-    padding: 20px;
-    /* Size */
-    width: calc(100vw - (20px * 2));
-  }
-  
-  #appbar br {
-    /* Size */
-    height: 20px;
-  }
-  
-  .screen {
-    /* Size */
-    height: calc(100vh - 64px);
-    /* Spacing */
-    padding-top: 64px;
-  }
-  
-  .card {
-    /* Size */
-    width: calc(65vw - (16px * 2));
-    /* Spacing */
-    margin: 36px auto;
-  }
+    #appbar {
+        /* Position */
+        z-index: 5;
+        /* Spacing */
+        padding: 20px;
+        /* Size */
+        width: calc(100vw - (20px * 2));
+    }
+    
+    #appbar br {
+        /* Size */
+        height: 20px;
+    }
+    
+    .screen {
+        /* Size */
+        height: calc(100vh - 64px);
+        /* Spacing */
+        padding-top: 64px;
+    }
+    
+    .card {
+        /* Size */
+        width: calc(65vw - (16px * 2));
+        /* Spacing */
+        margin: 36px auto;
+    }
 }
 
 /* Animations */
 
 @keyframes card-enter {
-  0%   {bottom: -10px; opacity: 0;}
-  100% {bottom: 0px; opacity: 1;}
+    0%     {bottom: -10px; opacity: 0;}
+    100% {bottom: 0px; opacity: 1;}
 }
 
 /* Default Styles */
 
 body {
-  /* Position */
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  /* Size */
-  width: 100vw;
-  height: 100vh;
-  /* Colour */
-  background-color: #FAFAFA;
+    /* Position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* Size */
+    width: 100vw;
+    height: 100vh;
+    /* Colour */
+    background-color: #FAFAFA;
 }
 
 #appbar {
-  /* Position */
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 24px;
-  /* Colour */
-  background-color: #4CAF50;
-  color: #FFFFFF;
-  /* Animation */
-  transition: height 0.2s cubic-bezier(.55, 0, .1, 1);
+    /* Position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    /* Colour */
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    /* Animation */
+    transition: height 0.2s cubic-bezier(.55, 0, .1, 1);
 }
 #appbar br {
-  /* Misc */
-  opacity: 0px;
+    /* Misc */
+    opacity: 0px;
 }
 
 .screen {
-  /* Position */
-  position: fixed;
-  bottom: -100vh;
-  left: 0px;
-  /* Size */
-  width: 100vw;
-  /* Animation */
-  transition: bottom 0.4s cubic-bezier(.55, 0, .1, 1);
+    /* Position */
+    position: fixed;
+    bottom: -100vh;
+    left: 0px;
+    /* Size */
+    width: 100vw;
+    /* Animation */
+    transition: bottom 0.4s cubic-bezier(.55, 0, .1, 1);
 }
 
 .screen.active {
-  /* Position */
-  bottom: 0px;
+    /* Position */
+    bottom: 0px;
 }
 
 .card {
-  /* Position */
-  position: relative;
-  /* Size */
-  height: auto;
-  /* Spacing */
-  padding: 16px;
-  /* Colour */
-  background-color: #FFFFFF;
-  /* Animation */
-  animation: card-enter 1s cubic-bezier(.55, 0, .1, 1);
+    /* Position */
+    position: relative;
+    /* Size */
+    height: auto;
+    /* Spacing */
+    padding: 16px;
+    /* Colour */
+    background-color: #FFFFFF;
+    /* Animation */
+    animation: card-enter 1s cubic-bezier(.55, 0, .1, 1);
 }
 
 .card#welcome {
-  /* Size */
-  width: 50vw;
-  /* Spacing */
-  margin: 36px auto;
-  margin-bottom: 8px;
-  padding: 16px;
-  /* Alignment */
-  text-align: center;
+    /* Size */
+    width: 50vw;
+    /* Spacing */
+    margin: 36px auto;
+    margin-bottom: 8px;
+    padding: 16px;
+    /* Alignment */
+    text-align: center;
 }
 
 .card#welcome .display-1 {
-  /* Misc */
-  display: inline-block;
-  /* Spacing */
-  margin-bottom: 10px;
+    /* Misc */
+    display: inline-block;
+    /* Spacing */
+    margin-bottom: 10px;
 }
 
 div.section-text {
-  /* Position */
-  position: relative;
-  left: 16px;
-  /* Size */
-  height: 36px;
-  /* Text */
-  line-height: 36px;
-  /* Colour */
-  color: rgba(0, 0, 0, 0.54);
+    /* Position */
+    position: relative;
+    left: 16px;
+    /* Size */
+    height: 36px;
+    /* Text */
+    line-height: 36px;
+    /* Colour */
+    color: rgba(0, 0, 0, 0.54);
 }
 
 div.section-text span {
-  /* Alignment */
-  vertical-align: middle;
+    /* Alignment */
+    vertical-align: middle;
 }
 
 .spinner-container {
-  /* Spacing */
-  margin: 16px auto;
-  /* Alignment */
-  text-align: center;
-  /* Misc */
-  opacity: 1;
-  /* Animation */
-  transition: opacity 0.4s cubic-bezier(.55, 0, .1, 1);
+    /* Spacing */
+    margin: 16px auto;
+    /* Alignment */
+    text-align: center;
+    /* Misc */
+    opacity: 1;
+    /* Animation */
+    transition: opacity 0.4s cubic-bezier(.55, 0, .1, 1);
 }
 
 .your-lists {
-  /* Position */
-  position: relative;
+    /* Position */
+    position: relative;
 }
 
 .msg {
-  /* Position */
-  position: absolute;
-  top: -8px;
-  /* Size */
-  width: 100vw;
-  /* Misc */
-  opacity: 0;
-  /* Alignment */
-  text-align: center;
-  /* Animation */
-  transition: opacity 0.4s cubic-bezier(.55, 0, .1, 1) 0.5s;
+    /* Position */
+    position: absolute;
+    top: -8px;
+    /* Size */
+    width: 100vw;
+    /* Misc */
+    opacity: 0;
+    /* Alignment */
+    text-align: center;
+    /* Animation */
+    transition: opacity 0.4s cubic-bezier(.55, 0, .1, 1) 0.5s;
 }
 
 .msg span {
-  /* Misc */
-  display: block;
-  /* Spacing */
-  margin-top: 8px;
+    /* Misc */
+    display: block;
+    /* Spacing */
+    margin-top: 8px;
 }

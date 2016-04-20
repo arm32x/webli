@@ -1,15 +1,15 @@
 [
-  {
-    "ownedBy": "ARM32",
-    "title": "WebLi Test List",
-    "contents": [
-      "This is a test for",
-      "my app WebLi.",
-      "I like potatoes,",
-      "but only when",
-      "they're cooked",
-      "a certain way."
-    ],
-    "timeLastEdited": 1461073230
-  }
+    {
+        "ownedBy": "ARM32",
+        "title": "WebLi Test List",
+        "contents": [
+            "This is a test for",
+            "my app WebLi.",
+            "I like potatoes,",
+            "but only when",
+            "they're cooked",
+            "a certain way."
+        ],
+        "timeLastEdited": 1461073230
+    }
 ]
