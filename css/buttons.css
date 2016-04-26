@@ -1,0 +1,24 @@
+button.flat {
+    /* Size */
+    height: 36px;
+    line-height: 36px;
+    min-width: calc(88px - (16px / 2));
+    /* Text */
+    text-transform: uppercase;
+    font-weight: 500;
+    /* Colour */
+    color: #000000;
+    background: none;
+    /* Alignment */
+    text-align: center;
+    /* Border */
+    border: none;
+    outline: none;
+    /* Misc */
+    opacity: 0.87;
+}
+
+button.flat.accent {
+    /* Colour */
+    color: #C6FF00; /* Material Lime A400 */
+}

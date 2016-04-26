@@ -160,6 +160,9 @@ div.section-text {
 div.section-text span {
     /* Alignment */
     vertical-align: middle;
+div.section-text button.flat {
+    /* Misc */
+    opacity: 0.54;
 }
 
 .spinner-container {
