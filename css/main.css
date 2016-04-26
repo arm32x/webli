@@ -146,20 +146,16 @@ body {
 }
 
 div.section-text {
-    /* Position */
-    position: relative;
-    left: 16px;
     /* Size */
     height: 36px;
     /* Text */
     line-height: 36px;
+    /* Spacing */
+    margin: 0px 16px;
     /* Colour */
     color: rgba(0, 0, 0, 0.54);
 }
 
-div.section-text span {
-    /* Alignment */
-    vertical-align: middle;
 div.section-text button.flat {
     /* Misc */
     opacity: 0.54;

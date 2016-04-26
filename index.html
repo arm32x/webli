@@ -9,6 +9,8 @@
         <link rel = "stylesheet" href = "css/fonts.css"/>
         <link rel = "stylesheet" href = "css/spinner.css"/>
         <link rel = "stylesheet" href = "css/main.css"/>
+        <script src = "js/lib/jquery.js"></script>
+        <script src = "js/main.js"></script>
     </head>
     <body>
         <div id = "appbar" class = "shadow-2">
@@ -28,15 +30,25 @@
             </div>
             <div class = "section-text">
                 <span class = "subheading">Your Lists</span>
+                <span class = "float-right">
+                    <button class = "flat">See All</button>
+                </span>
             </div>
             <div class = "your-lists">
-                <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                     <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-                </svg>
+                <div class = "spinner-container">
+                    <svg class = "spinner" width = "36px" height = "36px" viewBox = "0 0 66 66" xmlns = "http://www.w3.org/2000/svg">
+                         <circle class = "path" fill = "none" stroke-width = "6" stroke-linecap = "square" cx = "33" cy = "33" r = "30"></circle>
+                    </svg>
+                </div>
+                <div class = "could-not-load msg">
+                    <img src = "images/icons/folder-remove/48px.png"/>
+                    <span>Couldn't load lists</span>
+                </div>
+                <div class = "not-signed-in msg">
+                    <img src = "images/icons/account-off/48px.png"/>
+                    <span>Not signed in</span>
+                </div>
             </div>
-        </div>
-        <div id = "screen-your-lists" class = "screen">
-            
         </div>
         <div id = "overlay">
             
