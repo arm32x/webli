@@ -27,6 +27,6 @@ $ (document).ready (function () {
             $ (".your-lists .could-not-load.msg").css ("opacity", "0.38");
         }
     }
-    xhr.open ("GET", "/webli/data/lists.json?requestid=" + Math.random (), true);
+    xhr.open ("GET", "data/lists.json?requestid=" + Math.random (), true);
     xhr.send ();
 });
